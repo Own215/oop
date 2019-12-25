@@ -1,13 +1,21 @@
+  
 #include<iostream>
 using namespace std;
-main(){
-	int a=1,b=3,c=5,d=6,e=9;
-	
-	for(int i=1 ;i<=e; i++){
-		cout<<"\n";
-		
-		for(int j=1; j<=e ; j++){
-			cout<<e;		
-		}	
-	}	
-}
+int main(){
+	int number;
+   cout << "Enter Five Numbers between 1 and 9: ";
+   for(int n=1; n <= 5; n++ ){
+      cin >> number;
+      if ( number < 1 || 9 < number ) {
+         cout << "\nNumber " << number << " is out of range!\n";
+         continue;
+      }
+      cout << endl;
+     for ( int i=1; i <= 2; i++ ) {
+         for ( int j=1; j<= number; j++ )
+           cout << number;
+        cout << endl;
+    }
+   }
+
+
